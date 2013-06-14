@@ -11,7 +11,7 @@ class Cron::WebSocket
 	      # path, query_string, origin, headers
 
 	      # Publish message to the client
-	      ws.send "Hello Client, you connected to #{handshake.path}"
+	      ws.send "Hello Client, you connected to" #{handshake.path}"
 	    }
 
 	    ws.onclose { puts "Connection closed" }
